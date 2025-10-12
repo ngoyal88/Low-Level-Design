@@ -234,9 +234,12 @@ int main(){
     vm.insertCoin(CoinType::ONE);
     vm.insertCoin(CoinType::FIVE);
     vm.insertCoin(CoinType::FIVE);
-    vm.insertCoin(CoinType::FIVE);
     vm.showAvailableItems();
     vm.selectItem(ItemType::COKE);
     vm.cancelTransaction();
+    vm.insertCoin(CoinType::TEN);
+    vm.insertCoin(CoinType::TEN);
+    vm.selectItem(ItemType::WATER);
+    vm.showAvailableItems();
     return 0;
 }
